@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/down.loader.js";
+      var loaderUrl = buildUrl + "/tESTTEST.loader.js";
       var config = {
-        dataUrl: buildUrl + "/down.data.unityweb",
-        frameworkUrl: buildUrl + "/down.framework.js.unityweb",
-        codeUrl: buildUrl + "/down.wasm.unityweb",
+        dataUrl: buildUrl + "/tESTTEST.data.unityweb",
+        frameworkUrl: buildUrl + "/tESTTEST.framework.js.unityweb",
+        codeUrl: buildUrl + "/tESTTEST.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "My project",
@@ -108,7 +108,7 @@
               }).then((unityInstance) => {
                 loadingBar.style.display = "none";
                 fullscreenButton.onclick = () => {
-                  unityInstance.SetFullscreen(1);
+                  document.makeFullscreen('unity-container');
                 };
               }).catch((message) => {
                 alert(message);
